@@ -1,5 +1,9 @@
 from flask import Flask, render_template, request
 from app.generator import generate_text
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = Flask(__name__)
 
